@@ -5,25 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="/file.js" defer></script>
+    <title>Formulario</title>
 </head>
 <body>
+    
     <div class="ok">
     <h1>Cadastro</h1>
-    <label for="Nome ">Nome: </label>
-    <input type="nome" name="nome">
-    <label for="Email ">Email: </label>
-    <input type="email" name="email">
-    <label for="Senha">Senha: </label>
-    <input type="password" name="senha">
-    <label for="number">Idade:</label>
-    <input type="number">
-    <label for="genero">Qual seu genero?</label><br>
-    <label for="genero">Masculino</label>
-    <input type="checkbox"><br>
-    <label for="genero">Feminino</label>
-    <input type="checkbox"><br>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha">
+
+        <label for="idade">Idade: </label>
+        <input type="number" id="idade">
+
+        <label for="genero">Qual seu genero?</label><br>
+
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+       
+        <br> <input type="radio" id="feminino" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label>
     
+    <button type='button' class="botaoEnvio" onclick="envio()">Cadastrar</button>
+</div>
+
+<div class="foto"><img src="/imgs/foto_perfil.png" alt="Perfil"> <div class="TextoFoto">Sua Foto</div> </div>
 </div>
 </body>
 </html>
